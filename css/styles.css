@@ -31,9 +31,10 @@
 
 :root {
   --font-family: 'League Spartan', Arial, sans-serif;
-  --dark-magenta: #502050;
-  --soft-pink: #ee68a4;
-  --grayish-magenta: #937b92;
+  --dark-magenta: #512051;
+  --soft-pink: #ee69a4;
+  --grayish-magenta: #927B91;
+  --light-grayish-magenta: #f7f2f7;
 }
 
 /* GLOBAL STYLES */
@@ -73,9 +74,9 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1150px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1158 px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -84,7 +85,131 @@ img {
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
+  padding-top: 82px;
+  padding-bottom: 99px;
 }
+
+
+/* INTRO */
+
+.intro__title {
+  color: var(--dark-magenta);
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 32px;
+  letter-spacing: -1.429px;
+  margin-top: 0;
+  margin-bottom: 17px;
+}
+
+.intro__text {
+  color: var(--grayish-magenta);
+  text-align: center;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: -0.633px;
+  margin-top: 0;
+  margin-bottom: 39px;
+}
+
+.intro__ratings {
+  margin-bottom: 34px;
+}
+
+.intro__rating {
+  padding: 16px 0;
+  border-radius: 8px;
+  background: var(--light-grayish-magenta);
+  text-align: center;
+}
+
+.intro__rating:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.fa-star:not(:last-child) {
+  margin-right: 9px;
+}
+
+.intro__rating-stars {
+  margin-bottom: 16px;
+}
+
+.intro__rating-text {
+  margin: 0;
+  color: var(--dark-magenta);
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+/* USER REVIEWS */
+
+.user-reviews {
+  padding: 16px 0;
+}
+
+.user-review {
+  padding: 40px 35px 32px;
+  border-radius: 8px;
+  background: var(--dark-magenta);
+  color: #fff;
+
+}
+
+.user-review:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.user-review__buyer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 24px;
+  margin-bottom: 24px;
+}
+
+.user-review__img {
+  display: block;
+  grid-row: 1 / 4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+
+}
+
+.user-review__name {
+  color: #fff;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.user-review__position {
+  color: var(--soft-pink);
+  font-size: 17px;
+  font-style: normal;
+  line-height: normal;
+}
+
+.user-review__feedback {
+  color: #FFF;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.304px;
+}
+
+
+
+
+
 
 
 /* RETINA BACKGROUNDS */
