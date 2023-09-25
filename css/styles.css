@@ -243,6 +243,20 @@ only screen and (min-resolution: 2dppx) {}
     width: 50%;
     max-width: 445px;
   }
+  
+  .intro__title {
+    text-align: left;
+    font-size: 56px;
+    font-style: normal;
+    line-height: 48px;
+    letter-spacing: -2px;
+    margin-top: 0;
+    margin-bottom: 16px;    
+  }
+
+  .intro__text {
+    text-align: left;
+  }
 
   .intro__ratings {
     display: flex;
@@ -250,6 +264,7 @@ only screen and (min-resolution: 2dppx) {}
     width: 50%;
     max-width: 540px;
     margin: 0;
+    align-self: center;
   }
 
   .intro__rating {
@@ -258,6 +273,7 @@ only screen and (min-resolution: 2dppx) {}
     align-items: center;
     padding: 20px 32px;
     width: 445px;
+    height: 56px;
   }
 
   .intro__rating--center {
