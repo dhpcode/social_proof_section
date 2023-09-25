@@ -74,7 +74,7 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1158 px;
+  max-width: 1158px;
   padding-left: 24px;
   padding-right: 24px;
   margin-left: auto;
@@ -86,7 +86,6 @@ img {
 .main-content {
   flex-grow: 1;
   padding-top: 82px;
-  padding-bottom: 99px;
   background-image: url('../images/bg-pattern-top-mobile.svg'), url('../images/bg-pattern-bottom-mobile.svg');
   background-repeat: no-repeat;
   background-position: top left, bottom left;
@@ -133,8 +132,13 @@ img {
   margin-bottom: 16px;
 }
 
+.fa-star {
+  width: 16.55px;
+  height: 15.77px;
+}
+
 .fa-star:not(:last-child) {
-  margin-right: 9px;
+  margin-right: 8.45px;
 }
 
 .intro__rating-stars {
@@ -210,11 +214,6 @@ img {
 }
 
 
-
-
-
-
-
 /* RETINA BACKGROUNDS */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),
@@ -222,3 +221,95 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+
+  .main-content {
+    background-image: url('../images/bg-pattern-top-desktop.svg'), url('../images/bg-pattern-bottom-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+  }
+
+  .intro {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 71px;
+  }
+
+  .intro__main {
+    width: 50%;
+    max-width: 445px;
+  }
+
+  .intro__ratings {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 540px;
+    margin: 0;
+  }
+
+  .intro__rating {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    padding: 20px 32px;
+    width: 445px;
+  }
+
+  .intro__rating--center {
+    align-self: center;
+  }
+
+  .intro__rating--right {
+    align-self: flex-end;
+  }
+
+  .intro__rating-stars {
+    margin-bottom: 0;
+  }
+
+  .user-reviews {
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    height: 266px;
+  }
+
+  .user-review:not(:last-child) {
+    margin: 0;
+  }
+
+  .user-review {
+    width: 350px;
+    height: 234px;
+  }
+
+  .user-review--center {
+    align-self: center;
+  }
+
+  .user-review--bottom {
+    align-self: flex-end;
+  }
+
+
+}
+
+
+@media screen and (min-width: 1150px) {
+  .intro {
+    gap: 125px;
+  }
+
+  .intro__maing,
+  .intro__ratings {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+
+}
